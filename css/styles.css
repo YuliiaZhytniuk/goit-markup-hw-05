@@ -492,6 +492,7 @@ margin-bottom: 16px;
 
 .icon-send {
   fill: #fff;
+  margin-left: 16px;
 }
 
 .subscribe-title {
@@ -514,16 +515,19 @@ height: 40px;
 background-color: transparent;
 padding-right: 212px;
 padding-left: 16px;
+font-size: 12px; 
+line-height: 2;
+letter-spacing: 0.04em; 
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+color: #ffffff;
 }
 
 .footer-email::placeholder {
-  font-size: 12px;
-line-height: 2;
-letter-spacing: 0.04em;
-color: #fff;
+  color: #ffffff;
 }
 
 .subscribe-btn {
+  min-width: 165px;
   border-radius: 4px;
 padding: 8px 24px;
 border: none;
@@ -600,6 +604,8 @@ color: #fff;
   position: absolute;
   right: 24px;
   top: 24px;
+  width: 24px;
+  height: 24px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -614,6 +620,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 .modal-close:hover,
 .modal-close:focus {
   background-color: #404bbf;
+  border: none;
 }
 
 .icon-close {
@@ -640,8 +647,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
+.modal-close:hover .icon-ellipse,
 .modal-close:hover .icon-ellipse {
-  fill: #404bbf;;
+  fill: #404bbf;
 }
 
 .modal-title {
@@ -656,7 +664,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 .modal-field {
-  margin-bottom: 16px
+  margin-bottom: 8px;
 }
 
 .modal-input {
@@ -720,8 +728,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   border-radius: 4px; 
   background-color: transparent;
   outline: transparent;
-  padding: 22px 24px;
-  color: teal;
+  padding: 8px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   resize: none;
 }
@@ -751,12 +758,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 .check-text-holder {
+  display: inline-flex; 
   height: 16px;
   width: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
-  display: inline-flex;
   justify-content: center;
   align-items: center;
   fill: transparent;
@@ -783,7 +790,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
