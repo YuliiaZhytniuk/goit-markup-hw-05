@@ -37,7 +37,7 @@
     <section class="section hero">
       <div class="container">
     <h1 class="hero-title">Effective Solutions for Your Business</h1>
-    <button class="hero-btn" type="button">Order Service</button>
+    <button class="hero-btn" type="button" data-modal-open>Order Service</button>
   </div>
     </section>
 
@@ -414,15 +414,12 @@
 </div>
 </footer>
 
-<div class="backdrop">
+<div class="backdrop is-open" data-modal>
   <div class="modal">
    
-      <button type="button" class="modal-close">
+      <button type="button" class="modal-close" data-modal-close>
         <svg width="8" height="8" class="icon-close">
         <use href="./images/icons.svg#icon-close"></use>
-    </svg>
-        <svg width="24" height="24" class="icon-ellipse">
-      <use href="./images/icons.svg#icon-ellipse"></use>
     </svg>
     </button>
     
@@ -479,13 +476,15 @@
             <use href="./images/icons.svg#icon-vector"></use>
         </svg>
       </span> 
-      I accept the terms and conditions of the<a href="" class="checkbox-link">Privacy Policy</a>
+      I accept the terms and conditions of the <a href="" class="checkbox-link">Privacy Policy</a>
       </label>
       </div>
     <button class="modal-btn" type="submit">Send</button>
   </form>
   </div>
 </div>
+
+<script src="./js/modal.js"></script>
 
 </body>
 </html>
